@@ -1,0 +1,104 @@
+@import "../../variables";
+.imageViewerWrapper {
+  .imageViewerHeader {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  .imageViewer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 0px;
+  }
+  .alertBox {
+    padding: 10px;
+    background-color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #dedede;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid #e2e2e2;
+  position: relative;
+  padding-bottom: 48px;
+  transition: all ease-in-out 0.2s;
+  transform: scale(0.97);
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+    transition: all ease-in-out 0.3s;
+  }
+  .image {
+    height: 220px;
+    background-position: top;
+    background-size: cover;
+  }
+  .details {
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 9px;
+    margin-top: 10px;
+    .title {
+      a {
+        font-size: 18px;
+        color: $primaryColour;
+        text-decoration: none;
+      }
+      span {
+        font-size: 18px;
+        color: black;
+        font-weight: bold;
+        margin: 0px 5px;
+      }
+    }
+    img {
+      display: none;
+    }
+    .description {
+      p {
+        // to hide the first p tag of the element
+        &:first-child {
+          display: none;
+        }
+      }
+    }
+  }
+  .meta {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background: #fafafa;
+    padding: 10px;
+    border-top: 1px solid #f2f2f2;
+    .metaIcon {
+      color: grey;
+      font-size: 10px;
+      display: flex;
+      align-items: center;
+      margin-right: 7px;
+    }
+    .tags {
+      display: flex;
+      flex: 1;
+      flex-wrap: wrap;
+      div {
+        padding: 2px 6px;
+        font-size: 14px;
+        background-color: gainsboro;
+        color: grey;
+        border-radius: 2px;
+        margin-right: 5px;
+        display: inline-block;
+        margin-bottom: 3px;
+      }
+    }
+  }
+}

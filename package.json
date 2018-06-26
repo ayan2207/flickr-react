@@ -5,6 +5,7 @@
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.8",
     "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/free-solid-svg-icons": "prerelease",
     "@fortawesome/react-fontawesome": "0.0.20",
     "@types/material-ui": "^0.20.4",
     "@types/react-router": "^4.0.20",
@@ -24,6 +25,7 @@
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
     "material-ui": "^0.20.0",
+    "moment": "^2.22.2",
     "nuka-carousel": "^3.0.1",
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "3.2.0",

@@ -1,5 +1,86 @@
 @import "../../variables";
 
 .App {
-    font-size: 13px;
+  font-size: 13px;
+  padding: 15px;
+}
+
+.headerWrapper {
+  display: flex;
+  padding: 10px;
+  @media screen and (max-width: $break-small) {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+  }
+  .headerLeft {
+    h1 {
+      font-size: 37px;
+      font-weight: bold;
+      color: $secondaryColour;
+    }
+  }
+  .headerRight {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    @media screen and (max-width: $break-small) {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+.inputWrapper {
+  display: flex;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #dedede;
+  .input {
+    flex: 2;
+    border: 0px;
+  }
+  .searchIcon {
+    font-size: 18px;
+    color: white;
+    padding: 5px;
+    margin: 0px 5px;
+    background-color: $secondaryColour;
+    border-radius: 5px;
+    height: 34px;
+    cursor: pointer;
+    display: none;
+    @media only screen and (max-width: $break-small) {
+      display: block;
+    }
+  }
+}
+
+.appContainer {
+  display: flex;
+  .navWrapper {
+    background-color: white;
+    border-radius: 3px;
+    min-width: 60px;
+    position: fixed;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+    @media screen and (max-width: $break-small) {
+      display: none;
+    }
+  }
+  .contentWrapper {
+    flex: 1;
+    margin-left: 75px;
+    @media screen and (max-width: $break-small) {
+      margin-left: 0px;
+    }
+  }
+}
+
+.spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  color: $primaryColour;
 }

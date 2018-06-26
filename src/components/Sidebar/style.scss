@@ -1,0 +1,17 @@
+.sidebarItems {
+  .appIcon {
+    text-align: center;
+    margin: 9px 0px;
+    img {
+      width: 45px;
+    }
+  }
+  .icon {
+    font-size: 27px;
+    text-align: center;
+    color: grey;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
