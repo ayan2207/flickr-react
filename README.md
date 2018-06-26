@@ -21,3 +21,13 @@ This project was bootstrapped with Facebook's [Create React App](https://github.
 - React Router - for navigation
 
 The skeleton project is available on my [GitHub Page](https://github.com/ayan2207/webapp_template)
+
+**TODO:**
+- [x] Use Typescript
+- [x] Implement Redux
+- [x] Add Image title search functionality
+- [x] Add Infinite scrolling
+- [x] Use SASS precompiler
+- [ ] Add Offline support by saving response in Redux
+- [ ] Add Search functionality for tags
+- [ ] Improve look and feel
