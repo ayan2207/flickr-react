@@ -4,15 +4,17 @@
 
 Run the following commands in the project directory
 
-`npm install`
+`yarn install`
 
-`npm start`
+`yarn start`
 
 Open in browser:
 
-`http://localhost:3000`
+`http://localhost:3000`yarn 
 
 ---
+Inline-style: 
+![alt text](https://image.ibb.co/eUYAkT/localhost_3000_Laptop_with_Hi_DPI_screen.png "Logo Title Text 1")
 
 This project was bootstrapped with Facebook's [Create React App](https://github.com/facebook/create-react-app) project. It was cloned and "ejected" in-order to further customise and add the following features:
 
